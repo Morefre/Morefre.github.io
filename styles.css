@@ -41,12 +41,13 @@ nav a {
 }
 .intro-grid {
   display: grid;
-  grid-template-columns: 32% minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
   gap: 38px;
   align-items: start;
 }
 .profile-photo {
-  height: 520px;
+  width: 100%;
+  aspect-ratio: 7 / 10;
   margin: 0;
   overflow: hidden;
   background: #eee;
@@ -110,7 +111,7 @@ footer {
   .topbar > a { width: 100%; padding: 0 17px; }
   nav { padding: 25px 0 32px; }
   .intro-grid { grid-template-columns: 1fr; gap: 40px; }
-  .profile-photo { width: min(100%, 380px); height: 500px; }
+  .profile-photo { width: min(100%, 300px); }
   h2 { font-size: 18px; }
   .research > h2 { font-size: 36px; }
   .quote { margin: 50px auto 62px; }
